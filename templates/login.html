@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/login.css') }}"
+    />
+    <link rel="stylesheet" href="signup1.css" />
+    <script
+      src="https://kit.fontawesome.com/c69267ae46.js"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+  </head>
+
+  <body>
+    <h1 class="step1">SIGN IN PAGE</h1>
+    <p>{{val}}</p>
+    <div class="signup1-card">
+      <form action="{{url_for('takeLogin')}}" method="post" class="step1-form">
+        <label for="maailid" id="umailid">EMAIL:</label>
+        <input type="email" name="maailid" id="umail" />
+        <br />
+        <label for="pwd" id="upwdlabel">PASSWORD:</label>
+        <input type="password" name="pwd" id="upwd" />
+        <br />
+        <button class="submit-btn" type="submit">SIGN IN</button>
+      </form>
+      <hr id="form-partitioner" />
+    </div>
+    <form action="/register" method="post" class="next-page">
+      <button class="signin-info" type="submit">
+        Dont have an account?sign up
+      </button>
+    </form>
+  </body>
+</html>

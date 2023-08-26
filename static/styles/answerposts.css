@@ -1,0 +1,186 @@
+* {
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+}
+
+.left-menu {
+  height: 101%;
+  position: fixed;
+  width: 20%;
+  background: #f2ecf9;
+  border: 1px solid #f2ecf9;
+  border-radius: 16px;
+  margin: -2%;
+}
+
+ul {
+  background: none;
+}
+
+li {
+  list-style: none;
+  height: 84px;
+  background: #f2ecf9;
+}
+
+.bulb {
+  margin-top: 15px;
+  align-items: center;
+  background: none;
+}
+
+button {
+  background: #f2ecf9;
+  border: none;
+}
+
+.home-nav {
+  margin-top: 50px;
+}
+
+.pred-nav {
+  margin-top: 75px;
+}
+
+.rep-nav {
+  margin-top: 100px;
+}
+
+.qa-nav {
+  margin-top: 30px;
+}
+
+.report {
+  display: block;
+  margin-top: 100px;
+}
+
+.report:hover,
+button:hover {
+  background: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  height: 2rem;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.45rem;
+  color: #8a33c8;
+  background: none;
+  margin: 17px;
+  height: 2rem;
+}
+
+.search-part {
+  position: fixed;
+  width: 715px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 20%;
+}
+
+hr {
+  -webkit-transform: rotate(270deg);
+  -webkit-transform-origin-x: 70%;
+  position: sticky;
+  top: 0;
+  opacity: 0.6;
+  overflow: auto;
+}
+
+.search-bar {
+  width: 390px;
+  background: white;
+  border-radius: 14px;
+  height: 40px;
+  border: none;
+}
+
+.facts-tips {
+  margin-left: 77%;
+  margin-top: 0px;
+  color: #8a33c8;
+  position: fixed;
+  background: rgb(255, 255, 255, 0.6);
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+.facts-tips p {
+  margin: 0px;
+  margin-left: 40px;
+  font-weight: bolder;
+  margin-top: 11px;
+  background: none;
+  letter-spacing: 0.4rem;
+}
+
+.upCnt {
+  display: block;
+  margin-left: 1%;
+  margin-top: 1%;
+  width: 20%;
+  color: gold;
+  background: none;
+}
+
+.dwCnt {
+  display: block;
+  margin-left: 20%;
+  margin-top: -3%;
+  width: 20%;
+  color: gold;
+  margin-right: 0px;
+  background: none;
+}
+
+#answer-post {
+  background: rgb(250, 236, 157);
+  width: 500px;
+  border-radius: 5px;
+  border: none;
+}
+
+.worry {
+  margin-top: 21px;
+}
+
+/* .post-answers {
+  margin-left: 24%;
+  margin-top: 2%;
+  margin-right: 0%;
+  display: inline-block;
+  width: 504.8;
+  overflow-y: auto;
+} */
+
+.facts-and-tips {
+  margin-left: 75%;
+  margin-top: 1%;
+  overflow: auto;
+}
+
+.facts-and-tips:hover {
+  transform: none;
+}
+#show,
+#show1 {
+  background: rgb(210, 210, 253);
+  border-radius: 5px;
+  border: none;
+  margin-top: 5%;
+}
+
+#show1 {
+  margin-top: 2px;
+}
+
+a {
+  text-decoration: none;
+  background: none;
+}

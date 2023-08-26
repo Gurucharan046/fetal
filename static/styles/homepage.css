@@ -1,0 +1,169 @@
+* {
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+}
+
+.left-menu {
+  height: 101%;
+  position: fixed;
+  width: 20%;
+  background: #f2ecf9;
+  border: 1px solid #f2ecf9;
+  border-radius: 16px;
+  margin: -1%;
+  margin-top: -1%;
+}
+
+ul {
+  background: none;
+}
+
+li {
+  list-style: none;
+  height: 84px;
+  background: #f2ecf9;
+}
+
+button {
+  background: #f2ecf9;
+  border: none;
+}
+
+.home-nav {
+  margin-top: 50px;
+}
+
+.pred-nav {
+  margin-top: 75px;
+}
+
+.report {
+  display: block;
+  margin-top: 100px;
+}
+
+.qa-nav {
+  margin-top: 30px;
+}
+
+.report:hover,
+button:hover {
+  background: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  height: 2rem;
+}
+
+.rep,
+.qa,
+.home,
+.pred {
+  font-weight: bold;
+  font-size: 1.45rem;
+  color: #8a33c8;
+  background: none;
+  margin: 17px;
+  height: 2rem;
+}
+
+.right-menu {
+  height: 101%;
+  position: fixed;
+  width: 40%;
+  background: #f2ecf9;
+  border: 1px solid #f2ecf9;
+  border-radius: 16px;
+  margin-top: -1%;
+  margin-left: 65%;
+  font-weight: bolder;
+  color: #8a33c8;
+}
+
+.right-menu span {
+  color: purple;
+  font-size: 1.01rem;
+  background: none;
+}
+
+.right-menu ul li {
+  margin-top: 15px;
+  height: 52px;
+  font-size: 1.15rem;
+  font-weight: medium;
+}
+
+.woman {
+  margin-bottom: 15px;
+  margin-left: 31%;
+  margin-top: 45px;
+  align-items: center;
+}
+
+.lout {
+  background: none;
+}
+
+.log-out {
+  margin-left: 20%;
+  color: #8a33c8;
+  font-weight: bold;
+}
+
+/* .top
+{
+  position:fixed;
+  background: none;
+  margin-top:10px;
+  height: 10%;
+  width: 650px;
+  margin-left: 11%;
+} */
+/* .search-box
+{
+   width: 400px;
+   margin-left:20%;
+   background: white;
+   margin-top: 15px;
+   border-radius: 15px;
+   border: none;
+   opacity: .8;
+   height: 36px;
+
+}
+.search-btn
+{
+   background: none;
+   color: #8a33c8;
+}
+.notify
+{
+   background: none;
+   color: #8a33c8;
+} */
+.center-part {
+  width: 46%;
+  height: auto;
+  margin-left: 292px;
+}
+.right-menu .info
+{
+   margin-top: 10%;
+}
+a {
+  text-decoration: none;
+  background: none;
+}
+.MAA
+{
+  width: 50%;
+  height: auto;
+  
+}
+
+.right-menu ul li span {
+  font-weight: bolder;
+  text-transform: uppercase;
+}

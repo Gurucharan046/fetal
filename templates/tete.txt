@@ -1,0 +1,52 @@
+source_sans_pro_bold_italic
+source_sans_pro_bold
+
+
+position: relative;
+width: 151.36015748031px;
+height: 40.413543307087px;
+background-color: ;
+z-index: 1008;
+padding-top: 0px;
+padding-right: 7.6251968503937px;
+padding-bottom: 0px;
+padding-left: 0px;
+font-size: 19px;
+line-height: 1.25;
+text-align: left;
+color: #8a33c8;
+font-family: source_sans_pro_bold;
+margin: 0px;
+direction: ltr;
+font-weight: bold;
+font-style: italic;
+text-decoration: none;
+display: table-cell;
+word-break: break-word;
+vertical-align: middle;
+"
+
+
+position: relative;
+width: 161.27291338583px;
+height: 40.413543307087px;
+background-color: ;
+z-index: 1002;
+padding-top: 0px;
+padding-right: 7.6251968503937px;
+padding-bottom: 0px;
+padding-left: 0px;
+font-size: 19px;
+line-height: 1.25;
+text-align: center;
+color: #8a33c8;
+font-family: source_sans_pro_bold
+margin: 0px;
+direction: ltr;
+font-weight: bold;
+font-style: italic;
+text-decoration: none;
+display: table-cell;
+word-break: break-word;
+vertical-align: middle;
+"

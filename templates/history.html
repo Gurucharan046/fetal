@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c69267ae46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/history.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="left-menu">
+      <ul>
+        <li>
+          <button class="home-nav">
+            <a href="/home"
+              ><i class="fa-solid fa-xl fa-house" style="color: #8a33c8"></i
+              ><span class="home">HOME</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <button class="pred-nav">
+            <a href="/home/predict"
+              ><i
+                class="fa-solid fa-xl fa-laptop-medical"
+                style="color: #8a33c8"
+              ></i
+              ><span class="pred">PREDICT</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <a href="/home/result" class="report"
+            ><i class="fa-solid fa-xl fa-file-waveform" style="color: #8a33c8">
+            </i
+            ><span class="rep">REPORTS</span></a
+          >
+        </li>
+        <li>
+          <button class="qa-nav">
+            <a href="/home/questionPost"
+              ><i class="fa-regular fa-comment fa-xl" style="color: #8a33c8"></i
+              ><span class="qa" style="margin-left: 2px">EXPERIENCE</span></a
+            >
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="Table">
+      <table>
+        <thead>
+          <tr>
+            <th>REPORT ID</th>
+            <th>REPORT DATE</th>
+            <th>REPORT'S RESULT</th>
+            <th>VIEW REPORT</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {%for i,j,k,z in zip(lst,report_list,value_means,dateofreports)%}
+          <tr>
+            <td>{{j}}</td>
+            <td>{{z}}</td>
+            <td>{{k}}</td>
+            <td><a href="{{i}}">VIEW RESULT</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

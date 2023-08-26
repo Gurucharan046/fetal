@@ -1,0 +1,120 @@
+*
+{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02rem;
+}
+body
+{
+    /* background: #c0c0e8; */
+    background: #F2ECF9;
+}
+.googleIcon,.facebookIcon
+{
+    color: #8a33c8;
+    margin-left: 33%;
+}
+.gbtn
+{
+   background: none;
+   border: 0px;
+   margin-left: 40%;
+   margin-top:0px;
+}
+
+.signin-info
+{
+  margin-left: 59%;
+  margin-top: 425px;
+  font-weight: 600;
+  color: #8a33c8;
+  font-size: 20px;
+  border: none;
+  background:none ;
+}
+.signin-info:hover
+{
+   text-decoration: underline;
+   animation: forwards ;
+   animation-duration: 2s;
+   line-height: .5rem;
+   text-transform: uppercase;
+   text-shadow: #bbbefe;
+}
+.step1
+{
+   text-align: center;
+   margin-top: 6%;
+   position: relative;
+}
+.connect-with
+{
+  font-weight: bold;
+  margin-left: 10px;
+}
+.signup1-card
+{
+  background: rgba(255, 255, 255, 0.89);
+  box-shadow: 24px 23px 7px rgba(139, 133, 133, 0.16);
+  border-radius: 25px;
+  position: absolute;
+   width: 510px;
+   height: 397px;
+   margin-top: 2px;
+   margin-left: 33%;
+
+}
+label
+{
+  position: absolute;
+  width: 400px;
+  height: 37px;
+  margin-top: 8%;
+  margin-left: 5%;
+  
+  /* identical to box height */
+   color: #000000;
+}
+#form-partitioner
+{
+  width: 450px;
+  height: 3px;
+  background: #8a33c8;
+  border-radius: 50%;
+  opacity: .2;
+}
+#confirm
+{
+     margin-left: 10px;
+}
+#umailid
+{
+    margin-left: 147px;
+}
+#upwdlabel
+{
+    margin-left: 100px;
+}
+input
+{
+     margin-left: 44%;
+     margin-top: 7%;
+     width: 268px;
+     height: 30px;
+    background: #F2ECF9;
+     border-radius: 7px;
+}
+.submit-btn
+{
+    margin-left: 40.5%;
+    margin-top: 7%;
+    height: 45px;
+    width: 153px;
+    background: #bbbefe;
+    border-radius: 10px;
+    letter-spacing: 0.25rem;
+    font-size: 20px;
+    font-weight: 600;
+
+}

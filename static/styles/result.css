@@ -1,0 +1,168 @@
+* {
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+}
+
+.left-menu {
+  height: 101%;
+  position: fixed;
+  width: 20%;
+  background: #f2ecf9;
+  border: 1px solid #f2ecf9;
+  border-radius: 16px;
+  margin: -1.5%;
+}
+
+.download {
+  color: #8a33c8;
+  height: 1.5rem;
+  margin-left: 60%;
+}
+
+ul {
+  background: none;
+}
+
+li {
+  list-style: none;
+  height: 84px;
+  background: #f2ecf9;
+}
+
+button {
+  background: #f2ecf9;
+  border: none;
+}
+
+.home-nav {
+  margin-top: 50px;
+}
+
+.pred-nav {
+  margin-top: 75px;
+}
+
+.rep-nav {
+  margin-top: 100px;
+}
+
+.personal-info,
+.personal-info h1,
+.personal-info p {
+  background: none;
+  color: #8a33c8;
+  margin-left: 5px;
+  line-height: 2rem;
+  display: block;
+  font-weight: bold;
+  align-items: center;
+}
+
+.personal-info p {
+  color: rgb(79, 16, 138);
+  display: inline;
+}
+
+br {
+  height: 0.5rem;
+}
+
+.paper-clip {
+  margin-top: -1px;
+  margin-left: 0%;
+  background: none;
+  -webkit-transform: rotate(90deg);
+}
+
+.personal-info p {
+  text-transform: uppercase;
+}
+
+.report {
+  width: 740px;
+  height: 700px;
+  background: white;
+  margin-left: 30%;
+  margin-top: 11px;
+  opacity: 0.8;
+  color: white;
+  border: 1px solid black;
+}
+
+.qa-nav {
+  margin-top: 30px;
+}
+
+.report-nav {
+  display: block;
+  margin-top: 100px;
+}
+
+.report-nav:hover,
+button:hover {
+  background: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  height: 2rem;
+}
+
+.value-col {
+  color: rgb(215, 109, 215);
+  margin-left: 2px;
+}
+
+.report-shower {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 20px;
+  background: white;
+}
+
+.report-grid-item,
+.report-grid-item1 {
+  background: white;
+  margin-left: 3px;
+
+  font-weight: bolder;
+  color: #8a33c8;
+}
+
+.report-grid-item {
+  margin-top: 0.8rem;
+}
+
+.report-grid-item1 {
+  color: rgb(27, 26, 26);
+  margin-left: 10px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.45rem;
+  color: #8a33c8;
+  background: none;
+  margin: 17px;
+  height: 2rem;
+}
+
+.nreq {
+  margin-left: 60%;
+  padding: 10px;
+  color: #8a33c8;
+}
+
+a {
+  text-decoration: none;
+  background: none;
+}
+
+.report-grid-item1 span {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: rgb(79, 16, 138);
+  text-transform: uppercase;
+}
+

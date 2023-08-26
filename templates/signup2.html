@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/signup2.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup2.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <h1 class="step2">STEP 2</h1>
+    <p>{{val}}</p>
+    <div class="signup2-card">
+      <form action="{{url_for('step2')}}" method="post" class="step2-form">
+        <label for=" name">NAME:</label>
+        <input required type="text" name="name" id="uname" />
+        <br />
+        <label for="age">AGE:</label>
+        <input required required type="number" name="age" id="uage" />
+        <br />
+        <label for="adnum">AADHAR NUMBER:</label>
+        <input required type="text" name="adnum" id="aadhar" />
+        <br />
+        <label for="phnum1">PHONE NUMBER 1:</label>
+        <input required type="tel" name="phnum1" id="uphnum1" />
+        <br />
+        <label for="phnum2">PHONE NUMBER 2:</label>
+        <input required type="tel" name="phnum2" id="uphnum2" />
+        <br />
+        <label for="dname"> DOCTOR NAME:</label>
+        <input required type="text" name="dname" id="dname" />
+        <br />
+        <label for="hname">HOSPITAL NAME:</label>
+        <input required type="text" name="hname" id="hname" />
+        <button class="submit-btn" type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <form action="{{url_for('takeLogin')}}" method="post" class="next-page">
+      <button class="signin-info" type="submit">
+        Already have an account?sign in
+      </button>
+    </form>
+  </body>
+</html>

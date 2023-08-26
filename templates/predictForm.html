@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c69267ae46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="predictForm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/predictform.css') }}"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="left-menu">
+      <ul>
+        <li>
+          <button class="home-nav">
+            <a href="/home"
+              ><i class="fa-solid fa-xl fa-house" style="color: #8a33c8"></i
+              ><span class="home">HOME</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <button class="pred-nav">
+            <a href="/home/predict"
+              ><i
+                class="fa-solid fa-xl fa-laptop-medical"
+                style="color: #8a33c8"
+              ></i
+              ><span class="pred">PREDICT</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <a href="/home/result" class="report"
+            ><i class="fa-solid fa-xl fa-file-waveform" style="color: #8a33c8">
+            </i
+            ><span class="rep">REPORTS</span></a
+          >
+        </li>
+        <li>
+          <button class="qa-nav">
+            <a href="/home/questionPost"
+              ><i class="fa-regular fa-comment fa-xl" style="color: #8a33c8"></i
+              ><span class="qa" style="margin-left: 2px">EXPERIENCE</span></a
+            >
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div id="formContent">
+      <form action="{{url_for('predict1')}}" id="predictForm" method="post">
+        <label for="accvalue" name="accvalue">ACCELERATION VALUE:</label>
+        <input required type="text" name="accval" /><br />
+        <label for="astv_value" name="astv_value"
+          >ABNORMAL SHORT TERM VARIABILITY VALUE:</label
+        >
+        <input required type="text" name="astv_val" /><br />
+        <label for="mvstvalue" name="mvstvalue"
+          >MEAN VALUE OF SHORT TERM VARIABILITY VALUE:</label
+        >
+        <input required type="text" name="mvstval" /><br />
+        <label for="tastv_value" name="tastv_value"
+          >TIME % WITH ABNORMAL LONG TERM VARIABILITY VALUE:</label
+        >
+        <input required type="text" name="tastv_val" /><br />
+        <label for="hme_value" name="hme_value">HISTOGRAM MEAN VALUE:</label>
+        <input required type="text" name="hme_val" /><br />
+        <button type="submit" value="getinfo" id="predict">
+          PREDICT THE FETAL HEALTH
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

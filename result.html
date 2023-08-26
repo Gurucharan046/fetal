@@ -1,0 +1,320 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c69267ae46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="result.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        background: #e5e5e5;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.2rem;
+      }
+
+      .left-menu {
+        height: 101%;
+        position: fixed;
+        width: 20%;
+        background: #f2ecf9;
+        border: 1px solid #f2ecf9;
+        border-radius: 16px;
+        margin: -1.5%;
+      }
+
+      .download {
+        color: #8a33c8;
+        height: 1.5rem;
+        margin-left: 60%;
+      }
+
+      ul {
+        background: none;
+      }
+
+      li {
+        list-style: none;
+        height: 84px;
+        background: #f2ecf9;
+      }
+
+      button {
+        background: #f2ecf9;
+        border: none;
+      }
+
+      .home-nav {
+        margin-top: 50px;
+      }
+
+      .pred-nav {
+        margin-top: 75px;
+      }
+
+      .rep-nav {
+        margin-top: 100px;
+      }
+
+      .personal-info,
+      .personal-info h1,
+      .personal-info p {
+        background: none;
+        color: #8a33c8;
+        margin-left: 5px;
+        line-height: 2rem;
+        display: block;
+        font-weight: bold;
+        align-items: center;
+      }
+
+      .personal-info p {
+        color: rgb(79, 16, 138);
+        display: inline;
+      }
+
+      br {
+        height: 0.5rem;
+      }
+
+      .paper-clip {
+        margin-top: -1px;
+        margin-left: 0%;
+        background: none;
+        -webkit-transform: rotate(90deg);
+      }
+
+      .personal-info p {
+        text-transform: uppercase;
+      }
+
+      .report {
+        width: 740px;
+        height: 700px;
+        background: white;
+        margin-left: 30%;
+        margin-top: 11px;
+        opacity: 0.8;
+        color: white;
+        border: 1px solid black;
+      }
+
+      .qa-nav {
+        margin-top: 30px;
+      }
+
+      .report-nav {
+        display: block;
+        margin-top: 100px;
+      }
+
+      .report-nav:hover,
+      button:hover {
+        background: white;
+        opacity: 0.9;
+        border-radius: 10px;
+        height: 2rem;
+      }
+
+      .value-col {
+        color: rgb(215, 109, 215);
+        margin-left: 2px;
+      }
+
+      .report-shower {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 20px;
+        background: white;
+      }
+
+      .report-grid-item,
+      .report-grid-item1 {
+        background: white;
+        margin-left: 3px;
+
+        font-weight: bolder;
+        color: #8a33c8;
+      }
+
+      .report-grid-item {
+        margin-top: 0.8rem;
+      }
+
+      .report-grid-item1 {
+        color: rgb(27, 26, 26);
+        margin-left: 10px;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 1.45rem;
+        color: #8a33c8;
+        background: none;
+        margin: 17px;
+        height: 2rem;
+      }
+
+      .nreq {
+        margin-left: 60%;
+        padding: 10px;
+        color: #8a33c8;
+      }
+
+      a {
+        text-decoration: none;
+        background: none;
+      }
+
+      .report-grid-item1 span {
+        font-size: 1.1rem;
+        text-decoration: underline;
+        color: rgb(79, 16, 138);
+        text-transform: uppercase;
+      }
+
+      #space {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="left-menu">
+      <ul>
+        <li>
+          <button class="home-nav">
+            <a href="/home"
+              ><i class="fa-solid fa-xl fa-house" style="color: #8a33c8"></i
+              ><span class="home">HOME</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <button class="pred-nav">
+            <a href="/home/predict"
+              ><i
+                class="fa-solid fa-xl fa-laptop-medical"
+                style="color: #8a33c8"
+              ></i
+              ><span class="pred">PREDICT</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <a href="/home/result" class="report-nav"
+            ><i class="fa-solid fa-xl fa-file-waveform" style="color: #8a33c8">
+            </i
+            ><span class="rep">REPORTS</span></a
+          >
+        </li>
+        <li>
+          <button class="qa-nav">
+            <a href="/home/questionPost"
+              ><i class="fa-regular fa-comment fa-xl" style="color: #8a33c8"></i
+              ><span class="qa">Q AND A's</span></a
+            >
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="report">
+      <img src="icons8-paper-clip-64.png" class="paper-clip" alt="" />
+      <div class="personal-info">
+        <h1 class="usr-name-head">
+          NAME:
+          <p class="usr-name">{{userName}}</p>
+        </h1>
+        <h1 class="usr-age-head">
+          AGE:
+          <p class="usr-age">{{userAge}}</p>
+        </h1>
+
+        <h1 class="usr-docname-head">
+          DOCTOR NAME:
+          <p class="usr-docname">{{userdocname}}</p>
+        </h1>
+
+        <h1 class="usr-hospname-head">
+          HOSPITAL NAME:
+          <p class="usr-hosname">{{userHospName}}</p>
+        </h1>
+      </div>
+      <div class="report-shower">
+        <div class="report-grid-item">FEATURE NAMES</div>
+        <div class="report-grid-item">VALUES</div>
+        <div class="report-grid-item">VALUE DESCRIBE'S</div>
+        <div class="report-grid-item1">ACCELERATION</div>
+        <div class="report-grid-item1">
+          <span class="value-col">{{acc}}</span>
+        </div>
+        {%if acc<= 0.003176774800188058%}
+        <div class="report-grid-item1">BELOW NORMAL</div>
+        {%else%}
+        <div class="report-grid-item1">NORMAL</div>
+        {%endif%}
+        <div class="report-grid-item1">HISTOGRAM MEAN</div>
+        <div class="report-grid-item1">
+          <span class="value-col">{{hme}}</span>
+        </div>
+        {%if hme <= 134.48283968030088%}
+        <div class="report-grid-item1">BELOW NORMAL</div>
+        {%else%}
+        <div class="report-grid-item1">NORMAL</div>
+        {%endif%}
+        <div class="report-grid-item1">ABNORMAL SHORT TERM VARIABILITY</div>
+        <div class="report-grid-item1">
+          <span class="value-col">{{astv}}</span>
+        </div>
+        {%if astv<= 46.93370944992948%}
+        <div class="report-grid-item1">BELOW NORMAL</div>
+        {%else%}
+        <div class="report-grid-item1">NORMAL</div>
+        {%endif%}
+        <div class="report-grid-item1">
+          MEAN VALUE OF SHORT TERM VARIABILITY
+        </div>
+        <div class="report-grid-item1">
+          <span class="value-col">{{mvst}}</span>
+        </div>
+        {%if mvst <= 1.3319228960977902%}
+        <div class="report-grid-item1">BELOW NORMAL</div>
+        {%else%}
+        <div class="report-grid-item1">NORMAL</div>
+        {%endif%}
+        <div class="report-grid-item1">
+          TIME % WITH ABNORMAL SHORT TERM VARIABILITY
+        </div>
+        <div class="report-grid-item1">
+          <span class="value-col">{{tast}}</span>
+        </div>
+        {%if tast <= 9.821814762576398%}
+        <div class="report-grid-item1">BELOW NORMAL</div>
+        {%else%}
+        <div class="report-grid-item1">NORMAL</div>
+        {%endif%}
+        <div class="report-grid-item1">PREDICTION</div>
+        <div class="report-grid-item1">
+          <span class="value-col">{{pred}}</span>
+        </div>
+        <div class="report-grid-item1">{{result}}</div>
+      </div>
+    </div>
+    <a href="/download" class="download"
+      >SEND THIS REPORT AS PDF TO YOUR MAIL ID</a
+    >
+    <input type="textbox" name="" id="">
+    <span id="space"></span>
+    <a href="/home" class="nreq">NOT REQUIRED</a>
+  </body>
+</html>

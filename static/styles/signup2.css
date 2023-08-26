@@ -1,0 +1,94 @@
+* {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02rem;
+}
+
+body {
+  background: #F2ECF9;
+}
+
+.signin-info {
+  margin-left: 63%;
+  margin-top: 559px;
+  font-weight: 600;
+  color: #8a33c8;
+  font-size: 20px;
+  border: none;
+  background: none;
+}
+
+.signin-info:hover {
+  text-decoration: underline;
+  animation: forwards;
+  animation-duration: 2s;
+  line-height: .5rem;
+  text-transform: uppercase;
+  text-shadow: #bbbefe;
+}
+
+.step2 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.signup2-card {
+  background: rgba(255, 255, 255, 0.89);
+  box-shadow: 24px 23px 7px rgba(139, 133, 133, 0.16);
+  border-radius: 25px;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin-top: 2px;
+  margin-left: 33%;
+
+}
+
+.next-page {
+  border: none;
+  background: none;
+}
+
+label {
+  position: absolute;
+  width: 400px;
+  height: 37px;
+  margin-top: 9%;
+  margin-left: 5%;
+
+  /* identical to box height */
+  color: #000000;
+}
+
+input {
+  margin-left: 40%;
+  margin-top: 7%;
+  width: 268px;
+  height: 30px;
+  background: #F2ECF9;
+  border-radius: 7px;
+}
+
+p {
+  color: #8a33c8;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.submit-btn {
+  margin-left: 40.5%;
+  margin-top: 7%;
+  height: 45px;
+  width: 153px;
+  background: #bbbefe;
+  border-radius: 10px;
+  letter-spacing: 0.25rem;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+p {
+  text-align: center;
+}

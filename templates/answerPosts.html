@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c69267ae46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="answerPosts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/answerposts.css') }}"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="left-menu" style="margin-top: -2%">
+      <ul>
+        <li>
+          <button class="home-nav">
+            <a href="/home"
+              ><i class="fa-solid fa-xl fa-house" style="color: #8a33c8"></i
+              ><span class="home">HOME</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <button class="pred-nav">
+            <a href="/home/predict"
+              ><i
+                class="fa-solid fa-xl fa-laptop-medical"
+                style="color: #8a33c8"
+              ></i
+              ><span class="pred">PREDICT</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <a href="/home/result" class="report"
+            ><i class="fa-solid fa-xl fa-file-waveform" style="color: #8a33c8">
+            </i
+            ><span class="rep">REPORTS</span></a
+          >
+        </li>
+        <li>
+          <button class="qa-nav">
+            <a href="/home/questionPost"
+              ><i class="fa-regular fa-comment fa-xl" style="color: #8a33c8"></i
+              ><span class="qa" style="margin-left: 2px">EXPERIENCE</span></a
+            >
+          </button>
+        </li>
+      </ul>
+    </div>
+    {%for i in ans%}
+    <div
+      class="post-answers"
+      style="
+        width: 370px;
+        margin-left: 30%;
+        text-align: center;
+        margin-right: 0%;
+        float: center;
+      "
+    >
+      <p class="worry">EXPERIENCE OF OUR USER</p>
+      <textarea
+        name="answer"
+        id="answer-post"
+        cols="30"
+        rows="10"
+        style="width: 370px; margin-right: 0%; float: center"
+      >
+{{i}}</textarea
+      >
+    </div>
+    {%endfor%}
+    <div class="right-menu" style="margin-top: 0px; position: relative">
+      <img
+        class="showImg"
+        style="position:absolute;top:0px;width: 400px;margin-top=-72%;height: 200%; margin-left: 75%;top=0;float:top;"
+        src="https://img.freepik.com/free-vector/fetus-inside-womb-beloved-baby_546897-201.jpg?w=2000"
+      />
+    </div>
+  </body>
+</html>

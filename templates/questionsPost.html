@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c69267ae46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="questionsPosts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/questionpost.css') }}"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="left-menu">
+      <ul>
+        <li>
+          <button class="home-nav">
+            <a href="/home"
+              ><i class="fa-solid fa-xl fa-house" style="color: #8a33c8"></i
+              ><span class="home">HOME</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <button class="pred-nav">
+            <a href="/home/predict"
+              ><i
+                class="fa-solid fa-xl fa-laptop-medical"
+                style="color: #8a33c8"
+              ></i
+              ><span class="pred">PREDICT</span></a
+            >
+          </button>
+        </li>
+        <li>
+          <a href="/home/result" class="report"
+            ><i class="fa-solid fa-xl fa-file-waveform" style="color: #8a33c8">
+            </i
+            ><span class="rep">REPORTS</span></a
+          >
+        </li>
+        <li>
+          <button class="qa-nav">
+            <a href="/home/questionPost"
+              ><i class="fa-regular fa-comment fa-xl" style="color: #8a33c8"></i
+              ><span class="qa" style="margin-left: 2px">EXPERIENCE</span></a
+            >
+          </button>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <h2 class="facts-tips">
+      <i class="fa-regular fa-xl bulb fa-lightbulb"></i>
+      <p>FACTS AND TIPS</p>
+    </h2>
+    <div class="post-answers">
+      <form
+        action="{{url_for('proans')}}"
+        class="answers"
+        method="post"
+        style="width: 500px; height: 360px"
+      >
+        <label for="worry-answer-name">YOUR EXPERIENCE IN ONE WORD:</label>
+        <input
+          type="text"
+          name="worry-answer-name"
+          id="worry-name"
+          style="margin-left: 100px"
+        />
+        <br />
+        <label for="answer"></label>
+        <textarea
+          name="answer"
+          id="desc1"
+          cols="30"
+          rows="10"
+          placeholder="elaborate on your experience of carrying a baby "
+        ></textarea>
+        <br />
+        <button type="submit" id="answer-post">POST</button>
+      </form>
+    </div>
+    <button class="next">
+      <a href="/home/seeProblemSols">SEE ALL OTHER ANSWERS</a>
+    </button>
+    <div class="facts-and-tips">
+      <textarea name="" id="show" cols="30" rows="8">
+Exercise regularly,Write a birth plan,Take a pregnancy class,Baby sit a friend’s baby for some real-world experience</textarea
+      >
+      <textarea name="" id="show" cols="30" rows="8">
+Get comfortable shoes,Track your weight gain,Don’t overmedicate,Stretch before bed to avoid leg cramps</textarea
+      >
+      <textarea name="" id="show" cols="30" rows="8">
+Eat your veggies,Don’t eat soft cheeses,Eat folate-rich foods,Eat more fish </textarea
+      >
+      <textarea name="" id="show" cols="30" rows="8">
+Limit caffeine,Know when to call your doctor with concerns ,Avoid changing cat litter</textarea
+      >
+      <textarea name="" id="show" cols="30" rows="8">
+Drink plenty of fluids,Don’t drink alcohol,Don’t smoke; avoid secondhand smoke
+</textarea
+      >
+    </div>
+  </body>
+</html>
